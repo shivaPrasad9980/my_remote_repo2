@@ -13,6 +13,7 @@ def employee_view(request):
     emp = Employee.objects.all().order_by('-esal') #descending
     emp = Employee.objects.all().order_by('-esal')[0] #highest salaried person
     emp = Employee.objects.all().order_by('-esal')[1] # second higest salaried person
+    print('HI')
     # case insensitive
     # e = Employee(eno = 200,ename='applamma',esal=60000,eadd='nirmal')
     # e.save()
